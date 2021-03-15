@@ -162,6 +162,15 @@ string dividh(int a, int b)
 {
     string l;
     stringstream ss;
+        int temp3 = 0;
+    if(a<0)
+        temp3++;
+    if(b<0)
+        temp3++;
+    if(temp3==1)
+        ss<<"-";
+    a = abs(a);
+    b = abs(b);
     int temp = b,temp1 = 0;
     while(b<=a)
     {
